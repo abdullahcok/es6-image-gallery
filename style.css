@@ -1,0 +1,43 @@
+
+body{
+    margin: 30px;
+    padding: 0;
+    background: #333;
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+}
+
+.container{
+    max-width: 40%;
+    height: auto;
+    margin: auto;
+    border: #fff solid 3px;
+    background: #2d2d2d;
+    border-radius: 3px;
+    border-color: #2d2d2d;
+}
+
+#main-img img, .images img {
+    width: 100%;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+/*fade in animations*/
+@keyframes fadeIn {
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
